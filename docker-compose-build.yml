@@ -1,0 +1,10 @@
+---
+
+version: '3'
+
+services:
+  sshvpn:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: "${DOMAIN}/sshvpn:${SSHVPN_VERSION}"
